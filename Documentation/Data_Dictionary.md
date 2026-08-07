@@ -480,16 +480,13 @@ Volve-Production-Analytics/
 │
 ├── Documentation/
 │   ├── Data_Dictionary.md
-│   ├── DAX_Measures.md
-│   ├── Technical_Architecture.md
 │   └── Data_Model.png
 │
 ├── Screenshots/
 │   ├── ExecutiveSummary.png
-│   ├── ProductionPerformance.png
+│   ├── Production&InjectionPerformance.png
 │   ├── WellSpatialAnalysis.png
-│   ├── BusinessInsights.png
-│   └── TechnicalDocumentation.png
+│   └── BusinessInsights.png
 │
 ├── Volve_Field.pbix
 └── Dashboard.pdf
