@@ -26,7 +26,7 @@ The Power BI model follows a simplified **Star Schema** structure.
                     ┌───────────────┐
                     │      Date     │
                     │  Dimension    │
-                    └───────┬───────┘
+                    └───────────────┘
                             ▲
                             │
                             │
@@ -34,7 +34,7 @@ The Power BI model follows a simplified **Star Schema** structure.
                     ┌───────────────┐
                     │  Production   │
                     │     Fact      │
-                    └───────┬───────┘
+                    └───────────────┘
                             ▲
                             │
                             │
@@ -505,18 +505,18 @@ The **Volve Field Production Analytics Dashboard** uses a simplified analytical 
 ┌──────────────┐
 │     Date     │
 │  Dimension   │
-└──────┬───────┘
+└──────────────┘
        ▲
        │
        ▼
 ┌──────────────┐
 │  Production  │
 │     Fact     │
-└──────┬───────┘
+└──────────────┘
        ▲
        │
        ▼
-┌──────┴───────┐
+┌──────────────┐
 │ Coordinates  │
 │  Dimension   │
 └──────────────┘
