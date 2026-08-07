@@ -341,7 +341,8 @@ The model contains relationships between the fact and dimension tables.
 
 The recommended filtering approach is:
 
-```
+---
+
 Date
   ▲
   │
@@ -424,7 +425,8 @@ Typical preparation activities include:
 
 The overall data flow can be represented as:
 
-```text
+---
+
 Volve Field Dataset
         │
         ▼
