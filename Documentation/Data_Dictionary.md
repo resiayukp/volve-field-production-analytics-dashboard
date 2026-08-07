@@ -424,7 +424,7 @@ Typical preparation activities include:
 
 The overall data flow can be represented as:
 
----
+```
 
 Volve Field Dataset
         │
@@ -454,8 +454,6 @@ Volve Field Dataset
        Business Insights
 ```
 
----
-
 # 16. Data Governance
 
 | Attribute           | Description                    |
@@ -468,7 +466,7 @@ Volve Field Dataset
 | Intended Use        | Educational & Portfolio        |
 | Data Classification | Public Dataset                 |
 
----
+```
 
 # 17. Repository Documentation
 
