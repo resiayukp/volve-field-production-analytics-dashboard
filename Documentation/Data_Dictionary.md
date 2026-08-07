@@ -341,8 +341,7 @@ The model contains relationships between the fact and dimension tables.
 
 The recommended filtering approach is:
 
----
-
+```
 Date
   ▲
   │
@@ -353,7 +352,7 @@ Production
   ▼
 Coordinates
 
----
+```
 
 # 12. DAX Measures Supported by the Model
 
