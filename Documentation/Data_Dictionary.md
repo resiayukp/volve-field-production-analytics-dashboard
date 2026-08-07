@@ -27,6 +27,7 @@ The Power BI model follows a simplified **Star Schema** structure.
                     │      Date     │
                     │  Dimension    │
                     └───────┬───────┘
+                            ▲
                             │
                             │
                             ▼
@@ -34,6 +35,7 @@ The Power BI model follows a simplified **Star Schema** structure.
                     │  Production   │
                     │     Fact      │
                     └───────┬───────┘
+                            ▲
                             │
                             │
                             ▼
