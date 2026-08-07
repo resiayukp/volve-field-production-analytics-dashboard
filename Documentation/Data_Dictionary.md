@@ -22,7 +22,7 @@ The model is designed to support production performance analysis, well-level ana
 
 The Power BI model follows a simplified **Star Schema** structure.
 
-```text
+```
                     ┌───────────────┐
                     │      Date     │
                     │  Dimension    │
