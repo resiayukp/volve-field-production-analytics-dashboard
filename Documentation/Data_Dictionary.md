@@ -341,7 +341,7 @@ The model contains relationships between the fact and dimension tables.
 
 The recommended filtering approach is:
 
-```text
+```
 Date
   ▲
   │
