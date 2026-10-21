@@ -28,7 +28,7 @@ Production data is spread across many wells and periods. Without one view it is 
 |Well Spatial Analysis|Where are the wells and how do they perform? Surface and bottom-hole coordinates with production by well.|
 |Business Insights|Which wells need attention? Top performers, declining wells, high water cut wells, production contribution.|
 
-Add one screenshot per page in `Screenshots/` 
+Add one screenshot per page in `Screenshots/`
 
 !\[Business Insights](Screenshots/BusinessInsights.png)
 
@@ -40,15 +40,10 @@ Add one screenshot per page in `Screenshots/`
 
 ## Data and Model
 
-* **Source:** Volve Field dataset, published by Equinor. \[add link and licence terms from the Volve data page]
-* **Preparation (Power Query):** cleaning, data type validation, \[list your main steps].
-* **Model:** star schema with \[fact table name] and \[dimension table names].
-* **DAX measures:** For example:
-
-```DAX
-Water Cut % =
-DIVIDE ( \\\\\\\[Total Water Production], \\\\\\\[Total Oil Production] + \\\\\\\[Total Water Production] )
-```
+* **Source:** Volve Field dataset, published by Equinor. 
+* **Preparation (Power Query):** cleaning, data type validation.
+* **Model:** star schema.
+* **DAX measures:** 
 
 ## Repository Structure
 
@@ -62,8 +57,8 @@ DIVIDE ( \\\\\\\[Total Water Production], \\\\\\\[Total Oil Production] + \\\\\\
 
 ## How to Use
 
-1. Download `Volve\\\\\\\_Field.pbix` and open it in Power BI Desktop (\[version]).
-2. If prompted, point the data source to \[describe where the data file should be].
+1. Download `Volve\_Field.pbix` and open it in Power BI Desktop.
+2. If prompted, point the data source to [Equinor web page](https://www.equinor.com/energy/volve-data-sharing).
 3. Or view the live version through the link at the top.
 
 ## Limitations and Next Steps
