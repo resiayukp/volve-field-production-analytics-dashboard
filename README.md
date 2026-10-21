@@ -2,16 +2,14 @@
 
 Interactive Power BI dashboard that analyses oil, gas and water production and water injection for the Volve field, built on Equinor's open Volve dataset.
 
-!\[Executive Summary](Screenshots/executive-summary.png)
+!\[Executive Summary](Screenshots/ExecutiveSummary.png)
 
 [**View the live dashboard**](add-power-bi-publish-to-web-link) · [PDF export](Dashboard.pdf) · [Power BI file](Volve_Field.pbix)
 
 ## Key Findings
 
-> Replace each line with a real number from your dashboard. Findings are what recruiters read first.
-
 * Total oil production over the period: **10,037,081 Sm3**, with **F-12 well** producing **45%** of it.
-* Production peaked in **\[month/year]** and declined **3%** by **year**.
+* Production declined **3%** by **year**.
 * Water cut ranged from **25%** to **64%**, led by wells **F-14**.
 * Water injection of **30M Sm3** against production of **10M Sm3** (injection-to-production ratio **3**).
 
@@ -30,7 +28,15 @@ Production data is spread across many wells and periods. Without one view it is 
 |Well Spatial Analysis|Where are the wells and how do they perform? Surface and bottom-hole coordinates with production by well.|
 |Business Insights|Which wells need attention? Top performers, declining wells, high water cut wells, production contribution.|
 
-Add one screenshot per page in `Screenshots/` and link them here.
+Add one screenshot per page in `Screenshots/` 
+
+!\[Business Insights](Screenshots/BusinessInsights.png)
+
+!\[Executive Summary](Screenshots/ExecutiveSummary.png)
+
+!\[Production \& Injection Performance](Screenshots/Production\&InjectionPerformance.png)
+
+!\[Well Spatial Analysis](Screenshots/WellSpatialAnalysis.png)
 
 ## Data and Model
 
@@ -41,24 +47,22 @@ Add one screenshot per page in `Screenshots/` and link them here.
 
 ```DAX
 Water Cut % =
-DIVIDE ( \\\[Total Water Production], \\\[Total Oil Production] + \\\[Total Water Production] )
+DIVIDE ( \\\\\\\[Total Water Production], \\\\\\\[Total Oil Production] + \\\\\\\[Total Water Production] )
 ```
-
-Replace the example with your own measure definitions.
 
 ## Repository Structure
 
 ```
 ├── README.md
-├── Volve\\\_Field.pbix        # Power BI file (open with Power BI Desktop)
+├── Volve\_Field.pbix        # Power BI file (open with Power BI Desktop)
 ├── Dashboard.pdf           # static export of all pages
 ├── Screenshots/            # one image per dashboard page
-└── Documentation/          # \\\[describe what is in here]
+└── Documentation/          # data dictionary and data model
 ```
 
 ## How to Use
 
-1. Download `Volve\\\_Field.pbix` and open it in Power BI Desktop (\[version]).
+1. Download `Volve\\\\\\\_Field.pbix` and open it in Power BI Desktop (\[version]).
 2. If prompted, point the data source to \[describe where the data file should be].
 3. Or view the live version through the link at the top.
 
