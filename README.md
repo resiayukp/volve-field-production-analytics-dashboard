@@ -4,7 +4,7 @@ Interactive Power BI dashboard that analyses oil, gas and water production and w
 
 !\[Executive Summary](Screenshots/ExecutiveSummary.png)
 
-[**View the live dashboard**](add-power-bi-publish-to-web-link) · [PDF export](Dashboard.pdf) · [Power BI file](Volve_Field.pbix)
+[PDF export](Dashboard.pdf) · [Power BI file](Volve_Field.pbix)
 
 ## Key Findings
 
