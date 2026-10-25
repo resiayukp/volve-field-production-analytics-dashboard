@@ -1,4 +1,4 @@
-# Volve Field Production Analytics Dashboard
+<img width="4032" height="1916" alt="image" src="https://github.com/user-attachments/assets/15f2833a-4d3f-4055-bb72-8d9024c7d324" /># Volve Field Production Analytics Dashboard
 
 Interactive Power BI dashboard that analyses oil, gas and water production and water injection for the Volve field, built on Equinor's open Volve dataset.
 
@@ -42,6 +42,74 @@ Production data is spread across many wells and periods. Without one view it is 
 * **Preparation (Power Query):** cleaning, data type validation.
 * **Model:** star schema.
 * **DAX measures:**
+### Water Cut
+
+Water Cut measures the proportion of produced water relative to total liquid production (oil + water). It is a key indicator used to monitor reservoir performance and well efficiency.
+
+```DAX
+Water Cut Ratio=
+DIVIDE(
+    SUM('Production'[BORE_WAT_VOL]),
+    SUM('Production'[BORE_WAT_VOL]) +
+    SUM('Production'[BORE_OIL_VOL]),
+    0
+)
+```
+### Gas Cut
+
+Gas Cut measures the ratio of produced gas volume to produced oil volume. It is commonly used to monitor production behaviour, evaluate reservoir performance, and identify changes in well conditions.
+
+```DAX
+Gas Cut Ratio =
+DIVIDE(
+    SUM('Production'[BORE_GAS_VOL]),
+    SUM('Production'[BORE_OIL_VOL]),
+    0
+)
+```
+
+Higher Gas Cut values indicate a greater proportion of gas relative to oil production, which may reflect reservoir changes, gas breakthrough, or shifting production dynamics.
+
+### Top Performer Oil Well
+
+This measure identifies the well with the highest cumulative oil production within the selected filter context.
+
+```DAX
+Top Performer Oil Well =
+VAR TopWell =
+    TOPN(
+        1,
+        SUMMARIZE(
+            'Production',
+            'Production'[WELLBORE NAME],
+            "@Oil", SUM('Production'[BORE_OIL_VOL])
+        ),
+        [@Oil], DESC
+    )
+RETURN
+    MAXX(
+        TopWell,
+        'Production'[WELLBORE NAME]
+    )
+```
+
+The measure dynamically ranks all wells by total oil production, selects the highest-performing well, and returns its name. This KPI helps stakeholders quickly identify top-producing assets and evaluate well performance across the field.
+
+### Exponential Decline Oil Rate
+
+This measure calculates the exponential decline rate of oil production using Decline Curve Analysis (DCA). The calculation compares the current production rate against the historical peak production and determines the monthly rate of decline.
+
+The formula applied is:
+
+D = -ln(Qt / Qi) / t
+
+Where:
+
+- Qi = Peak Oil Production
+- Qt = Current Oil Production
+- t = Time elapsed since peak production (months)
+
+The KPI helps evaluate reservoir performance, identify production decline trends, and support future production forecasting and operational planning.
 
 ## Repository Structure
 
