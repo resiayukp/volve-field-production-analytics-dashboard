@@ -1,4 +1,4 @@
-<img width="4032" height="1916" alt="image" src="https://github.com/user-attachments/assets/15f2833a-4d3f-4055-bb72-8d9024c7d324" /># Volve Field Production Analytics Dashboard
+# Volve Field Production Analytics Dashboard
 
 Interactive Power BI dashboard that analyses oil, gas and water production and water injection for the Volve field, built on Equinor's open Volve dataset.
 
