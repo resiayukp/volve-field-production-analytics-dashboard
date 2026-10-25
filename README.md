@@ -47,7 +47,7 @@ Production data is spread across many wells and periods. Without one view it is 
 
 ```
 ├── README.md
-├── Volve\\\_Field.pbix        # Power BI file (open with Power BI Desktop)
+├── Volve_Field.pbix        # Power BI file (open with Power BI Desktop)
 ├── Dashboard.pdf           # static export of all pages
 ├── Screenshots/            # one image per dashboard page
 └── Documentation/          # data dictionary and data model
@@ -55,7 +55,7 @@ Production data is spread across many wells and periods. Without one view it is 
 
 ## How to Use
 
-1. Download `Volve\\\_Field.pbix` and open it in Power BI Desktop.
+1. Download `Volve_Field.pbix` and open it in Power BI Desktop.
 2. If prompted, point the data source to [Equinor web page](https://www.equinor.com/energy/volve-data-sharing).
 3. Or view the live version through the link at the top.
 
