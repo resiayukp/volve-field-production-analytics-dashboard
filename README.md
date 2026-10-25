@@ -8,6 +8,9 @@ Interactive Power BI dashboard that analyses oil, gas and water production and w
 
 ## Key Findings
 
+* Well **F-12 well** produced the highest cumulative oil volume in the field.
+* Water cut increased significantly during late production years.
+* A small number of wells contributed the majority of total oil production.
 * Total oil production over the period: **10,037,081 Sm3**, with **F-12 well** producing **45%** of it.
 * Production declined **3%** by **year**.
 * Water cut ranged from **25%** to **64%**, led by wells **F-14**.
