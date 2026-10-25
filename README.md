@@ -2,7 +2,7 @@
 
 Interactive Power BI dashboard that analyses oil, gas and water production and water injection for the Volve field, built on Equinor's open Volve dataset.
 
-!\[Executive Summary](Screenshots/ExecutiveSummary.png)
+!\[Executive Summary](Screenshots/ExecutiveSummary.PNG)
 
 [PDF export](Dashboard.pdf) · [Power BI file](Volve_Field.pbix)
 
@@ -28,13 +28,13 @@ Production data is spread across many wells and periods. Without one view it is 
 |Well Spatial Analysis|Where are the wells and how do they perform? Surface and bottom-hole coordinates with production by well.|
 |Business Insights|Which wells need attention? Top performers, declining wells, high water cut wells, production contribution.|
 
-!\[Business Insights](Screenshots/BusinessInsights.png)
+!\[Business Insights](Screenshots/BusinessInsights.PNG)
 
-!\[Executive Summary](Screenshots/ExecutiveSummary.png)
+!\[Executive Summary](Screenshots/ExecutiveSummary.PNG)
 
-!\[Production \& Injection Performance](Screenshots/Production\&InjectionPerformance.png)
+!\[Production \& Injection Performance](Screenshots/Production\&InjectionPerformance.PNG)
 
-!\[Well Spatial Analysis](Screenshots/WellSpatialAnalysis.png)
+!\[Well Spatial Analysis](Screenshots/WellSpatialAnalysis.PNG)
 
 ## Data and Model
 
